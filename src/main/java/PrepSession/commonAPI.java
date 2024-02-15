@@ -52,6 +52,6 @@ public class commonAPI {
 
   @AfterTest
   public void tearDown() {
-    driver.close();
+    driver.quit();
   }
 }
