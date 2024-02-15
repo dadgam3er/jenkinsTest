@@ -23,7 +23,7 @@ public class commonAPI {
   @Parameters("browser")
   public void buildUP(String browser) {
     if (browser.equalsIgnoreCase("firefox")) {
-      System.setProperty("web-driver.gecko.driver", System.getProperty("user.dir") + "/Drivers/geckodriver");
+      //System.setProperty("web-driver.gecko.driver", System.getProperty("user.dir") + "/Drivers/geckodriver");
       // driver = new FirefoxDriver();
       DesiredCapabilities cap = new DesiredCapabilities();
       cap.setCapability("browserName", "firefox");
@@ -35,7 +35,7 @@ public class commonAPI {
       }
 
     } else if (browser.equalsIgnoreCase("chrome")) {
-      System.setProperty("web-driver.gecko.driver", System.getProperty("user.dir") + "/Drivers/chromedriver");
+      //System.setProperty("web-driver.gecko.driver", System.getProperty("user.dir") + "/Drivers/chromedriver");
       // driver = new ChromeDriver();
       DesiredCapabilities cap = new DesiredCapabilities();
       cap.setCapability("browserName", "chrome");
