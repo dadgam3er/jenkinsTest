@@ -14,6 +14,6 @@ public class commonAPITest extends commonAPI
     public void GetTitle(){
         String title = driver.getTitle();
         System.out.println(title);
-        Assert.assertEquals("Google","title");
+        Assert.assertEquals(title,"Google");
     }
 }
