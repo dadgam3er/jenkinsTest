@@ -13,7 +13,7 @@ public class commonAPITest extends commonAPI
     @Test
     public void GetTitle(){
         String title = driver.getTitle();
-        System.out.println(title);
+        System.out.println("**********" + title + "**********");
         Assert.assertEquals(title,"Google");
     }
 }
